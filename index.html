@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Tutorial</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="main-box">
+		<div class="h2-box">
+			<h2>Challenge 1 : Your Age in days</h2>
+		</div>
+		<div class="button-box">
+			<button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+			<button class="btn btn-danger" onclick="reset()">Reset</button>
+		</div>
+		<div class="answer">
+			<div id="result"></div>
+		</div>
+	</div>
+
+
+	<div class="main-box">
+		<div class="h2-box">
+			<h2>Challenge 2 : Cat Generator</h2>
+		</div>
+		<div class="button-box">
+			<button class="btn btn-success" onclick="generateCat()">Generate cat</button>
+		</div>
+		<div class="answer">
+			<div id="other">
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="main-box">
+		<div class="h2-box">
+			<h2>Challenge 3 : Rock, Paper, Scissors</h2>
+		</div>
+		<div class="answer">
+			<div id="another">
+				<img id="rock" src="rock.jpg" alt="" onclick="rpsGame(this)">
+				<img id="paper" src="paper.jpg" alt="" onclick="rpsGame(this)">
+				<img id="scissors" src="scissor.jpg" alt="" onclick="rpsGame(this)">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="main-box">
+		<div class="h2-box">
+			<h2>Challenge 4 : Change the Color of all button</h2>
+		</div>
+		<div class="answer">
+			<div id="buttonColor">
+				<form action="">
+					<select class="form-control" name="backdrop" id="background" onchange="buttonColorChange(this)">
+						<option value="none">None</option>
+						<option value="red">Red</option>
+						<option value="green">Green</option>
+						<option value="random">Random</option>
+						<option value="reset">Reset</option>
+					</select>
+				</form>
+				<button class="btn btn-primary">Twiiter</button>
+				<button class="btn btn-success">Facebook</button>
+				<button class="btn btn-warning">Instagram</button>
+				<button class="btn btn-danger">YouTube</button>
+			</div>
+		</div>
+	</div>
+	
+	
+
+
+
+	<script src="home.js"></script>
+</body>
+</html>
